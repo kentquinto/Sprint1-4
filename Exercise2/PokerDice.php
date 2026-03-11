@@ -18,6 +18,7 @@ class PokerDice {
         $this->totalRolls = $this->totalRolls + 1;
         return $result;
     }
+
     public function roll($numberDice = 5) {
         $results = [];
         $this->lastRoll = [];
@@ -29,11 +30,12 @@ class PokerDice {
             $this->totalRolls = $this->totalRolls + 1;
         }
         return $results;
-
     }
+
     public function getLastRoll() {
         return $this->lastRoll;
     }
+    
     public function getTotalRolls() {
         return $this->totalRolls;
     }
